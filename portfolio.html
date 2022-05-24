@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Welcome to my Portfolio: Anthony Araujo</title>
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <style>
+
+      html {
+        width: 100%;
+        margin: 0;
+      }
+      .logo {
+        width: 200px;
+        padding-bottom: 2px;
+        padding-top: 5px;
+      }
+
+      .nav-link {
+        color: white;
+        font-family: 'Roboto Slab';
+      }
+
+      .about-row {
+        margin-top: 50px;
+      }
+
+      body {
+        font-family: 'Roboto Slab';
+        padding-top: 10px;
+        margin: 0;
+      }
+
+      .about {
+        padding: 5px;
+      }
+
+      .about-card {
+        background-color: #F5F5F5;
+      }
+
+      .about-desc-col {
+        font-size: 15px;
+        padding-top: 30px;
+      }
+
+      p {
+        font-size: 15px;
+        font-family: 'Roboto Slab';
+      }
+
+      .iam {
+        text-align: center;
+        padding-top: 80px;
+      }
+
+      .social ul {
+        list-style-type:none;
+        display:flex;
+        padding-left: 185px;
+        margin-bottom: -20px;
+      }
+
+      .social li {
+        display: inline-block;
+        padding-left: 20px;
+      }
+
+      .btn a {
+        font-family: 'Roboto Slab'
+      }
+
+      .completed-projects{
+        padding-top: 50px;
+        border-top: outset;
+        background-color: #F5F5F5;
+      }
+
+      .completed {
+        padding-left: 790px;
+      }
+
+      .completed-ul {
+        padding-left: 862px;
+      }
+
+      .about-ul {
+        text-align: center;
+      }
+
+      .about-me {
+        box-shadow: 2px 2px black;
+        position: relative;
+        z-index: 10;
+       }
+
+       .vd-title {
+         padding-top: 20px;
+         padding-left: 117px;
+       }
+
+       .col-ul {
+         padding-left: 170px;
+       }
+
+       .techs{
+         margin-top: 10px;
+         border:1px solid grey;
+         border-radius: 2px;
+         background-color: #F5F5F5;
+       }
+
+       .text-item {
+         margin-top: 0px;
+         font-size: 15px;
+         font-family: 'Roboto Slab';
+       }
+
+       .vd-desc-body {
+         padding: 3px;
+         border:1px solid grey;
+         border-radius: 2px;
+         background-color: #F5F5F5;
+       }
+
+       h2 {
+         font-family: 'Roboto Slab';
+       }
+
+       h5 {
+          font-family: 'Roboto Slab';
+       }
+
+       .vd-button {
+         background-color: grey;
+         border-color: grey;
+         margin-left: 35%;
+       }
+
+       .completed-projects {
+         padding-bottom: 20px;
+         border-bottom: inset;
+       }
+
+       .in-progress {
+         padding-top: 30px;
+         padding-left: 185px;
+       }
+
+       .in-progress-ul {
+         padding-left: 210px;
+       }
+
+       .limt-ul {
+         padding-left: 198px;
+
+       }
+
+       .project-title {
+         margin-left: 90px;
+       }
+
+       footer {
+
+       }
+
+       .vd-card {
+         margin-left: 50px;
+       }
+
+       .description-body {
+         padding: 3px;
+         border:1px solid grey;
+         border-radius: 2px;
+         background-color: #F5F5F5;
+       }
+
+        .description-progress {
+          padding: 3px;
+          border:1px solid grey;
+          border-radius: 2px;
+          background-color: #F5F5F5;
+        }
+
+        .limt {
+          margin-bottom: 10px;
+        }
+
+        .logo-image img{
+          background-color: white;
+          width: 200px;
+          margin-bottom: -50px;
+          padding-top: 5px;
+          border-radius: 7px;
+          border: solid black 8px;
+        }
+
+
+    </style>
+
+  </head>
+  <body>
+    <header>
+        <nav class="navbar navbar-expand fixed-top bg-black justify-content-end">
+          <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                <div class="logo-image">
+                  <img src="portfolio_logo.png" class="logo-image" alt="">
+                </div>
+              </a>
+              <ul class="navbar-nav" style="">
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#completed">Completed Projects</a></li>
+                <li class="nav-item"><a class="nav-link" href="#inprogress">In Progress</a></li>
+              </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!--ABOUT ME -->
+    <div class="container-fluid" class="about-me">
+      <div class="row about-row">
+        <div class="col about-col" style="width:50%;" id="about">
+          <h2 class="iam">
+            About Me
+          </h2>
+          <h6 class="about-ul">_________</h6>
+        </div>
+        <div class="col about-desc-col" style="width:50%">
+          <div class="card shadow-sm about-card">
+            <div class="card-body">
+              <p class="about">
+                 Firstly, thank you for taking the time to view my portfolio. I'm Anthony, a recent computer science
+                 graduate from Kennesaw State University in Georgia. I've always been interested in the inner-working mechanisms
+                 of things and being a logical thinker, computer science was a natural choice for me. During my studies, I've
+                 worked heavily with Java, C++, C#, SQL and Python. Through my extra-curriculars, I've picked up proficiencies in
+                 Ruby on Rails, Django, Spring and have begun learning React. Some of my main interests right now are Web Development,
+                 Backend Engineering and Machine Learning. I hope we can work together soon!
+              </p>
+            </div>
+          </div>
+        </div>
+        </div>
+
+        <div class="row social">
+          <ul class="social">
+            <!--LinkedIn Link -->
+            <li class="social"><a class="btn btn-primary" style="background-color: #0082ca;"
+              href="https://www.linkedin.com/in/anthony-araujo-04a990120/" role="button">
+              <i class="fab fa-linkedin-in"></i></a></li>
+            <li class="social"><a class="btn btn-primary" style="background-color: black;border-color:black;"
+              href="https://github.com/aaraujo1997" role="button">
+              <i class="fa-brands fa-github-square"></i></a></li>
+            <li class="social"><a class="btn btn-primary" style="background-color: grey; border-color:grey;"
+              href="https://pdfhost.io/v/Rr.upATo9_Updated_resume" role="button">
+              <i class="fa-solid fa-file-circle-plus"></i> Resume </a></li>
+          </ul>
+
+        </div>
+    </div>
+
+    <!--COMPLETED PROJECTS-->
+    <div class="container-fluid completed-projects" id="completed">
+      <div class="row">
+        <h2 class="completed">Completed Projects</h2>
+        <h6 class="completed-ul">____________</h6>
+      </div>
+      <div class="row virtudoc">
+        <div class="col vd-desc" style="width:50%;">
+          <div class="card vd-card">
+            <img src="vd_screen.jpg" class="virtudoc-img" style="width: 500px;"alt="">
+            <div class="card-body">
+              <p class="description"><b>Description:</b></p>
+              <div class="shadow-sm vd-desc-body">
+                <p class="description">
+                VirtuDoc is a web-based TeleHealth application that connects users to doctors.
+                It allows for user creation and deletion of three modalities (patient, doctor, admin), and
+                allows for virtual appointment creation and video conference along with built-in chat functionalities.
+                </p>
+              </div>
+              <div class="shadow-sm">
+                <p class="project-description"><b>Technologies Used:</b></p>
+                <ul class="techs">
+                  <li class="text-item">Java</li>
+                  <li class="text-item">Springboot</li>
+                  <li class="text-item">HTML/CSS/BootStrap5</li>
+                  <li class="text-item">Javascript</li>
+                  <li class="text-item">Docker</li>
+                  <li class="text-item">Heroku</li>
+                </ul>
+              </div>
+              <a class="btn btn-primary vd-button"
+                href="https://virtudoc.herokuapp.com/" target=_blank role="button">
+                <i class="fa-solid fa-link"></i> Visit Virtudoc
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col vd-title" style="width:50%;">
+          <h5 class="vd-title">VirtuDoc TeleHealth App</h5>
+          <h6 class="col-ul">____________</h6>
+        </div>
+        </div>
+    </div>
+
+    <div class="container-fluid" id="inprogress">
+      <div class="row">
+        <h2 class="in-progress">In Progress</h2>
+        <h6 class="in-progress-ul">____________</h6>
+      </div>
+      <div class="row limt">
+        <div class="col limt-title" style="width:50%;">
+          <h5 class="project-title">LIMT: Self-Adjusting TDEE Calculator</h5>
+          <h6 class="limt-ul">____________</h6>
+        </div>
+        <!-- TODO: grab screen image from LIMT -->
+        <div class="col limt-desc" style="width:50%;">
+          <div class="card limt-card">
+            <div class="card-body">
+              <p class="project-description"><b>Description:</b></p>
+              <p class="description-body">
+                LIMT is a web-based application that tracks a registered users daily caloric intake, as well as their
+                daily weight. The logic here being that to lose 1 lb of weight, you must burn 3500 kcal; thus, if a user
+                is accurately tracking their caloric intake over time, we can determine a semi-precise <abbr title="Total Daily Energy Expenditure">TDEE</abbr>
+                for a specific user. This information is valuable because although TDEE calculators exist on the web already,
+                they are limited to the age, height, and weight of users and science tells us that the metabolism is more complex than
+                a simple formulaic combination of these factors and every literal human body is unique. To build this project, I will
+                be using Java/Springboot to build off of the experience gained through VirtuDoc.
+              </p>
+              <p class="progress-description"><b>Progress:</b></p>
+              <div class="progress-bar" style="width:10%;margin-bottom: 8px;">
+                  10%
+              </div>
+              <p class="description-progress">
+                  Currently in beginning stages...
+              </p>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+      </div>
+
+  </body>
+  <footer class="text-center text-lg-start" style="background-color: black;">
+    <!-- Copyright -->
+    <div class="text-center p-3" style="color: #F5F5F5;">
+      © 2022 Copyright:
+      <a class="text-light" href="https://antaraujo.com/">antaraujo.com</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+</html>
