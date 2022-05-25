@@ -18,12 +18,6 @@
         width: 100%;
       }
 
-      .logo {
-        width: 200px;
-        padding-bottom: 2px;
-        padding-top: 5px;
-      }
-
       .navbar-nav {
         margin-left: -20%;
       }
@@ -32,10 +26,11 @@
         font-family: 'Roboto Slab';
         width: 100%;
         text-align: center;
+        font-size: 2vw;
       }
 
       .about-row {
-        margin-top: 50px;
+        padding-top: 5%;
       }
 
       body {
@@ -45,7 +40,7 @@
       }
 
       .about {
-        padding: 5px;
+        padding: 1%;
       }
 
       .about-card {
@@ -70,8 +65,10 @@
       .social ul {
         list-style-type:none;
         display:flex;
-        padding-left: 13%;
-        margin-bottom: -2%;
+        margin-bottom: -5%;
+        padding-top: 5%;
+        justify-content: center;
+
       }
 
       .social li {
@@ -90,11 +87,11 @@
       }
 
       .completed {
-        padding-left: 65%;
+        text-align: center;
       }
 
       .completed-ul {
-        padding-left: 72%;
+        text-align: center;
       }
 
       .about-ul {
@@ -108,12 +105,13 @@
        }
 
        .vd-title {
-         padding-top: 20px;
-         padding-left: 12%;
+         padding-top: 2%;
+         text-align: center;
+         display: inline-block;
        }
 
        .col-ul {
-         padding-left: 26%;
+         text-align: center;
        }
 
        .techs{
@@ -178,7 +176,7 @@
        }
 
        .vd-card {
-         margin-left: 50px;
+         margin: 5px;
        }
 
        .description-body {
@@ -201,10 +199,10 @@
 
         .logo-image img{
           background-color: white;
-          width: 70%;
-          margin-bottom: -50px;
+          margin-bottom: -15%;
           border-radius: 7px;
-          border: solid black 8px;
+          border: solid black 4px;
+          width: 50%;
         }
 
 
@@ -216,8 +214,10 @@
          <nav class="navbar navbar-expand fixed-top bg-black">
            <div class="container">
                <a class="navbar-brand" href="#">
-                 <div class="logo-image">
-                   <img src="imgs/portfolio_logo.png" class="logo-image image-fluid img-thumbnail" alt="">
+                 <div class="row">
+                   <div class="col-sm-8 logo-image">
+                     <img src="imgs/portfolio_logo.png" class="logo-image image-fluid img-thumbnail" alt="">
+                   </div>
                  </div>
                </a>
                <ul class="navbar-nav" style="">
@@ -232,13 +232,13 @@
     <!--ABOUT ME -->
     <div class="container" class="about-me">
       <div class="row about-row">
-        <div class="col-sm-5 about-col" id="about">
+        <div class="col-md-5 about-col" id="about">
           <h2 class="iam">
             About Me
           </h2>
           <h6 class="about-ul">_________</h6>
         </div>
-        <div class="col-sm-7 about-desc-col">
+        <div class="col-md-7 about-desc-col">
           <div class="card shadow-sm about-card">
             <div class="card-body">
               <p class="about">
@@ -255,7 +255,7 @@
         </div>
 
         <div class="row social">
-          <div class="col-sm-12">
+          <div class="col-md-5">
             <ul class="social list-unstyled">
               <!--LinkedIn Link -->
               <li class="social list-unstyled"><a class="btn btn-primary" style="background-color: #0082ca;"
@@ -275,13 +275,16 @@
     <!--COMPLETED PROJECTS-->
     <div class="container completed-projects" id="completed">
       <div class="row">
-        <div class="col-sm-12">
+        <div class="col-sm-7">
+
+        </div>
+        <div class="col-sm-5">
           <h2 class="completed">Completed Projects</h2>
           <h6 class="completed-ul">____________</h6>
         </div>
       </div>
       <div class="row virtudoc">
-        <div class="col-sm-6 vd-desc" style="width:50%;">
+        <div class="col-sm-7 order-xs-1 vd-desc">
           <div class="card vd-card">
             <img src="imgs/vd_screen.jpg" class="virtudoc-img img-fluid img-thumbnail" style="width: 500px;"alt="">
             <div class="card-body">
@@ -311,7 +314,7 @@
             </div>
           </div>
         </div>
-        <div class="col-sm-6 vd-title" style="width:50%;">
+        <div class="col-sm-5 order-xs-2 vd-title">
           <h5 class="vd-title">VirtuDoc TeleHealth App</h5>
           <h6 class="col-ul">____________</h6>
         </div>
