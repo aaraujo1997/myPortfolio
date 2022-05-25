@@ -14,6 +14,9 @@
 
     <style>
 
+      html {
+        width: 100%;
+      }
 
       .logo {
         width: 200px;
@@ -21,9 +24,14 @@
         padding-top: 5px;
       }
 
+      .navbar-nav {
+        margin-left: -20%;
+      }
       .nav-link {
         color: white;
         font-family: 'Roboto Slab';
+        width: 100%;
+        text-align: center;
       }
 
       .about-row {
@@ -62,13 +70,13 @@
       .social ul {
         list-style-type:none;
         display:flex;
-        padding-left: 185px;
-        margin-bottom: -20px;
+        padding-left: 13%;
+        margin-bottom: -2%;
       }
 
       .social li {
         display: inline-block;
-        padding-left: 20px;
+        padding-left: 10px;
       }
 
       .btn a {
@@ -82,11 +90,11 @@
       }
 
       .completed {
-        padding-left: 790px;
+        padding-left: 65%;
       }
 
       .completed-ul {
-        padding-left: 862px;
+        padding-left: 72%;
       }
 
       .about-ul {
@@ -101,11 +109,11 @@
 
        .vd-title {
          padding-top: 20px;
-         padding-left: 117px;
+         padding-left: 12%;
        }
 
        .col-ul {
-         padding-left: 170px;
+         padding-left: 26%;
        }
 
        .techs{
@@ -193,9 +201,8 @@
 
         .logo-image img{
           background-color: white;
-          width: 200px;
+          width: 70%;
           margin-bottom: -50px;
-          padding-top: 5px;
           border-radius: 7px;
           border: solid black 8px;
         }
@@ -206,32 +213,32 @@
   </head>
   <body>
     <header>
-        <nav class="navbar navbar-expand fixed-top bg-black justify-content-end">
-          <div class="container">
-              <a class="navbar-brand" href="#">
-                <div class="logo-image">
-                  <img src="imgs/portfolio_logo.png" class="logo-image" alt="">
-                </div>
-              </a>
-              <ul class="navbar-nav" style="">
-                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                <li class="nav-item"><a class="nav-link" href="#completed">Completed Projects</a></li>
-                <li class="nav-item"><a class="nav-link" href="#inprogress">In Progress</a></li>
-              </ul>
-            </div>
-        </nav>
-    </header>
+         <nav class="navbar navbar-expand fixed-top bg-black">
+           <div class="container">
+               <a class="navbar-brand" href="#">
+                 <div class="logo-image">
+                   <img src="imgs/portfolio_logo.png" class="logo-image image-fluid img-thumbnail" alt="">
+                 </div>
+               </a>
+               <ul class="navbar-nav" style="">
+                 <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                 <li class="nav-item"><a class="nav-link" href="#completed">Completed Projects</a></li>
+                 <li class="nav-item"><a class="nav-link" href="#inprogress">In Progress</a></li>
+               </ul>
+             </div>
+         </nav>
+     </header>
 
     <!--ABOUT ME -->
     <div class="container" class="about-me">
       <div class="row about-row">
-        <div class="col about-col" style="width:50%;" id="about">
+        <div class="col-sm-5 about-col" id="about">
           <h2 class="iam">
             About Me
           </h2>
           <h6 class="about-ul">_________</h6>
         </div>
-        <div class="col about-desc-col" style="width:50%">
+        <div class="col-sm-7 about-desc-col">
           <div class="card shadow-sm about-card">
             <div class="card-body">
               <p class="about">
@@ -248,32 +255,35 @@
         </div>
 
         <div class="row social">
-          <ul class="social">
-            <!--LinkedIn Link -->
-            <li class="social"><a class="btn btn-primary" style="background-color: #0082ca;"
-              href="https://www.linkedin.com/in/anthony-araujo-04a990120/" target="_blank role="button">
-              <i class="fab fa-linkedin-in"></i></a></li>
-            <li class="social"><a class="btn btn-primary" style="background-color: black;border-color:black;"
-              href="https://github.com/aaraujo1997" target="_blank role="button">
-              <i class="fa-brands fa-github-square"></i></a></li>
-            <li class="social"><a class="btn btn-primary" style="background-color: grey; border-color:grey;"
-              href="https://pdfhost.io/v/Rr.upATo9_Updated_resume" target="_blank" role="button">
-              <i class="fa-solid fa-file-circle-plus"></i> Resume </a></li>
-          </ul>
-
+          <div class="col-sm-12">
+            <ul class="social list-unstyled">
+              <!--LinkedIn Link -->
+              <li class="social list-unstyled"><a class="btn btn-primary" style="background-color: #0082ca;"
+                href="https://www.linkedin.com/in/anthony-araujo-04a990120/" target="_blank role="button">
+                <i class="fab fa-linkedin-in"></i></a></li>
+              <li class="social list-unstyled"><a class="btn btn-primary" style="background-color: black;border-color:black;"
+                href="https://github.com/aaraujo1997" target="_blank role="button">
+                <i class="fa-brands fa-github-square"></i></a></li>
+              <li class="social list-unstyled"><a class="btn btn-primary" style="background-color: grey; border-color:grey;"
+                href="https://pdfhost.io/v/Rr.upATo9_Updated_resume" target="_blank" role="button">
+                <i class="fa-solid fa-file-circle-plus"></i> Resume </a></li>
+            </ul>
+          </div>
         </div>
     </div>
 
     <!--COMPLETED PROJECTS-->
     <div class="container completed-projects" id="completed">
       <div class="row">
-        <h2 class="completed">Completed Projects</h2>
-        <h6 class="completed-ul">____________</h6>
+        <div class="col-sm-12">
+          <h2 class="completed">Completed Projects</h2>
+          <h6 class="completed-ul">____________</h6>
+        </div>
       </div>
       <div class="row virtudoc">
-        <div class="col vd-desc" style="width:50%;">
+        <div class="col-sm-6 vd-desc" style="width:50%;">
           <div class="card vd-card">
-            <img src="imgs/vd_screen.jpg" class="virtudoc-img" style="width: 500px;"alt="">
+            <img src="imgs/vd_screen.jpg" class="virtudoc-img img-fluid img-thumbnail" style="width: 500px;"alt="">
             <div class="card-body">
               <p class="description"><b>Description:</b></p>
               <div class="shadow-sm vd-desc-body">
@@ -301,7 +311,7 @@
             </div>
           </div>
         </div>
-        <div class="col vd-title" style="width:50%;">
+        <div class="col-sm-6 vd-title" style="width:50%;">
           <h5 class="vd-title">VirtuDoc TeleHealth App</h5>
           <h6 class="col-ul">____________</h6>
         </div>
@@ -310,16 +320,18 @@
 
     <div class="container" id="inprogress">
       <div class="row">
-        <h2 class="in-progress">In Progress</h2>
-        <h6 class="in-progress-ul">____________</h6>
+        <div class="col-sm-12">
+          <h2 class="in-progress">In Progress</h2>
+          <h6 class="in-progress-ul">____________</h6>
+        </div>
       </div>
       <div class="row limt">
-        <div class="col limt-title" style="width:50%;">
+        <div class="col-sm-6 limt-title" style="width:50%;">
           <h5 class="project-title">LIMT: Self-Adjusting TDEE Calculator</h5>
           <h6 class="limt-ul">____________</h6>
         </div>
         <!-- TODO: grab screen image from LIMT -->
-        <div class="col limt-desc" style="width:50%;">
+        <div class="col-sm-6 limt-desc" style="width:50%;">
           <div class="card limt-card">
             <div class="card-body">
               <p class="project-description"><b>Description:</b></p>
